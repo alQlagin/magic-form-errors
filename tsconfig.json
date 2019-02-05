@@ -17,6 +17,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "reactive-form-errors": [
+        "dist/reactive-form-errors"
+      ],
+      "reactive-form-errors/*": [
+        "dist/reactive-form-errors/*"
+      ]
+    }
   }
 }

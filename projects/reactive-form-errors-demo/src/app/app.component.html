@@ -1,0 +1,25 @@
+<div class="container">
+  <form [formGroup]="form">
+    <div class="form-group">
+      <label>Name</label>
+      <input class="form-control" formControlName="name" placeholder="name">
+    </div>
+    <div class="form-group">
+      <label>Email</label>
+      <input class="form-control" formControlName="email" placeholder="email">
+    </div>
+    <div class="form-group">
+      <div class="form-check" controlErrorContainer>
+        <input id="agree" type="checkbox" class="form-check-input" [errorTemplate]="errorTpl" formControlName="agreement">
+        <label class="form-check-label" for="agree">
+          I agree
+        </label>
+      </div>
+    </div>
+    <button type="submit">Submit</button>
+  </form>
+</div>
+
+<ng-template #errorTpl let-error>
+  <small class="form-text text-muted">{{error}}</small>
+</ng-template>
