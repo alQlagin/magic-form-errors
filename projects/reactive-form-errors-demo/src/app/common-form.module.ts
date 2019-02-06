@@ -1,15 +1,15 @@
 import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
-import { ReactiveFormErrorsModule } from 'reactive-form-errors';
+import { MagicErrorsModule } from 'reactive-form-errors';
 
 @NgModule({
   imports: [
     ReactiveFormsModule,
-    ReactiveFormErrorsModule
+    MagicErrorsModule
   ],
   exports: [
     ReactiveFormsModule,
-    ReactiveFormErrorsModule
+    MagicErrorsModule
   ]
 })
 export class CommonFormModule { }
