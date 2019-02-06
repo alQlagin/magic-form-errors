@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { FORM_DEFAULT_ERRORS } from 'reactive-form-errors';
+import { FORM_MAGIC_ERRORS } from 'reactive-form-errors';
 import { BootstrapFormModule } from './bootstrap-form/bootstrap-form.module';
 import { MaterialFormModule } from './material-form/material-form.module';
 
@@ -17,7 +17,7 @@ import { MaterialFormModule } from './material-form/material-form.module';
   ],
   providers: [
     {
-      provide: FORM_DEFAULT_ERRORS,
+      provide: FORM_MAGIC_ERRORS,
       useValue: {
         required: () => 'Required field',
         minlength: ({requiredLength, actualLength}) =>

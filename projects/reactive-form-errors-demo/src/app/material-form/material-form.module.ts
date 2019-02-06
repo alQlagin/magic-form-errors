@@ -5,6 +5,7 @@ import { MatButtonModule, MatCheckboxModule, MatFormFieldModule, MatInputModule 
 import { MaterialFormComponent } from './material-form.component';
 import { MaterialErrorComponent } from './material-error.component';
 import { CommonFormModule } from '../common-form.module';
+import { MAGIC_ERROR_COMPONENT } from 'reactive-form-errors';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,9 @@ import { CommonFormModule } from '../common-form.module';
     MatInputModule,
     MatCheckboxModule,
     MatButtonModule,
+  ],
+  providers: [
+    {provide: MAGIC_ERROR_COMPONENT, useValue: MaterialErrorComponent},
   ]
 })
 export class MaterialFormModule {

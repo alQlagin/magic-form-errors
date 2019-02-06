@@ -1,6 +1,4 @@
 import { Component, HostBinding } from '@angular/core';
-import { ERROR_COMPONENT } from 'reactive-form-errors';
-import { MaterialErrorComponent } from './material-error.component';
 import { FormService } from '../form.service';
 
 @Component({
@@ -9,7 +7,6 @@ import { FormService } from '../form.service';
   styleUrls: ['./material-form.component.scss'],
   providers: [
     FormService,
-    {provide: ERROR_COMPONENT, useValue: MaterialErrorComponent},
   ]
 })
 export class MaterialFormComponent {

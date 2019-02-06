@@ -10,3 +10,8 @@
     }
   }
 }
+::ng-deep {
+  label {
+    margin-bottom: initial;
+  }
+}
