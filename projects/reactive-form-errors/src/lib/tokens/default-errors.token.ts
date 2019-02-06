@@ -9,7 +9,7 @@ export const defaultErrors = {
 };
 
 
-export const FORM_DEFAULT_ERRORS = new InjectionToken('FORM_DEFAULT_ERRORS', {
+export const FORM_MAGIC_ERRORS = new InjectionToken('FORM_MAGIC_ERRORS', {
   providedIn: 'root',
   factory: () => defaultErrors
 });
