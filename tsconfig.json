@@ -20,10 +20,7 @@
     ],
     "paths": {
       "reactive-form-errors": [
-        "dist/reactive-form-errors"
-      ],
-      "reactive-form-errors/*": [
-        "dist/reactive-form-errors/*"
+        "projects/reactive-form-errors/src/public_api.ts"
       ]
     }
   }
