@@ -2,22 +2,18 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { ReactiveFormsModule } from '@angular/forms';
-import { ReactiveFormErrorsModule, FORM_DEFAULT_ERRORS } from 'reactive-form-errors';
-import { CustomErrorComponent } from './custom-error/custom-error.component';
+import { FORM_DEFAULT_ERRORS } from 'reactive-form-errors';
+import { BootstrapFormModule } from './bootstrap-form/bootstrap-form.module';
+import { MaterialFormModule } from './material-form/material-form.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CustomErrorComponent
   ],
-  entryComponents: [CustomErrorComponent],
   imports: [
     BrowserModule,
-    ReactiveFormsModule,
-    ReactiveFormErrorsModule.withCustomError({
-      errorComponent: CustomErrorComponent
-    })
+    BootstrapFormModule,
+    MaterialFormModule,
   ],
   providers: [
     {
