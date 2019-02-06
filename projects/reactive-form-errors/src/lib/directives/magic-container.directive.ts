@@ -3,7 +3,7 @@ import {Directive, ViewContainerRef, TemplateRef, EmbeddedViewRef, OnDestroy, Op
 @Directive({
   selector: '[controlContainer]'
 })
-export class ControlErrorContainerDirective implements OnDestroy {
+export class MagicContainerDirective implements OnDestroy {
   view: EmbeddedViewRef<any>;
   constructor(public vcr: ViewContainerRef, @Optional() templateRef: TemplateRef<any>) {
     if (templateRef) {
